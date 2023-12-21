@@ -21,6 +21,11 @@ class Project extends Model
         'introduction',
         'created_at',
         'location',
-        'cost'
+        'cost',
+        'owner',
+        'vendor',
+        'pic',
+        'start_date',
+        'end_date'
     ];
 }
