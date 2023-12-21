@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <title>App Name - @yield('title')</title>
+    <title>Manajemen Proyek - Ain</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
         rel="stylesheet">
 
     <!-- Font Awesome JS -->

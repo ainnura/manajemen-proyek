@@ -30,7 +30,7 @@
             <th>Nilai Kontrak</th>
             <th>Tanggal Mulai</th>
             <th>Tanggal Selesai</th>
-            <th width="90px">Action</th>
+            <th width="80px">Action</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
@@ -42,24 +42,20 @@
                 <td>Rp. {{ number_format($project->cost, 0, ',', '.') }}</td>
                 <td>
                     @if ($project->start_date)
-                        {{ date_format(date_create($project->start_date), 'jS M Y') }}
+                        {{ date_format(date_create($project->start_date), 'j F Y') }}
                     @else
                         N/A
                     @endif
                 </td>
                 <td>
                     @if ($project->end_date)
-                        {{ date_format(date_create($project->end_date), 'jS M Y') }}
+                        {{ date_format(date_create($project->end_date), 'j F Y') }}
                     @else
                         N/A
                     @endif
                 </td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
-
-                        <a href="{{ route('projects.show', $project->id) }}" title="show">
-                            <i class="fas fa-eye text-success  fa-lg"></i>
-                        </a>
 
                         <a href="{{ route('projects.edit', $project->id) }}">
                             <i class="fas fa-edit  fa-lg"></i>
