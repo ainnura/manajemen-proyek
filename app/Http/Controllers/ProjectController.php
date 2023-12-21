@@ -40,26 +40,18 @@ class ProjectController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'introduction' => 'required',
-            'location' => 'required',
-            'cost' => 'required'
+            'cost' => 'required',
+            'owner' => 'required',
+            'vendor' => 'required',
+            'pic' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required'
         ]);
 
         Project::create($request->all());
 
         return redirect()->route('projects.index')
             ->with('success', 'Project created successfully.');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Project $project)
-    {
-        return view('projects.show', compact('project'));
     }
 
     /**
@@ -82,10 +74,13 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $request->validate([
-            'name' => 'required',
-            'introduction' => 'required',
-            'location' => 'required',
-            'cost' => 'required'
+           'name' => 'required',
+            'cost' => 'required',
+            'owner' => 'required',
+            'vendor' => 'required',
+            'pic' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required'
         ]);
         $project->update($request->all());
 

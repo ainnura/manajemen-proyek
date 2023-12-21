@@ -31,29 +31,44 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
+                    <strong>Nama Proyek:</strong>
                     <input type="text" name="name" value="{{ $project->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
-                        placeholder="Introduction">{{ $project->introduction }}</textarea>
+                    <strong>Pemberi Kerja:</strong>
+                    <input type="text" name="owner" value="{{ $project->owner }}" class="form-control" placeholder="Owner">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="{{ $project->location }}"
-                        value="{{ $project->location }}">
+                    <strong>Vendor:</strong>
+                    <input type="text" name="vendor" value="{{ $project->vendor }}" class="form-control" placeholder="Vendor">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Cost:</strong>
-                    <input type="number" name="cost" class="form-control" placeholder="{{ $project->cost }}"
-                        value="{{ $project->location }}">
+                    <strong>PIC:</strong>
+                    <input type="text" name="pic" value="{{ $project->pic }}" class="form-control" placeholder="PIC">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Nilai Kontrak (Rp):</strong>
+                    <input type="number" name="cost" value="{{ $project->cost }}" class="form-control" placeholder="Cost">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Tanggal Mulai:</strong>
+                    <input type="date" name="start_date" value="{{ $project->start_date }}" class="form-control" placeholder="Start Date">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Tanggal Selesai:</strong>
+                    <input type="date" name="end_date" value="{{ $project->end_date }}" class="form-control" placeholder="End Date">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
