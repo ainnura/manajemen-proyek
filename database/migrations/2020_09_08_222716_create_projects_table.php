@@ -16,11 +16,10 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255)->nullable();
-            $table->string('introduction', 500)->nullable();
-            $table->string('location', 255)->nullable();
-            $table->decimal('cost', 22)->nullable()->default(0.00);
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->nullable();
+            $table->string('gaji', 255)->nullable();
+            $table->string('tunjangan', 255)->nullable();
+            $table->string('potongan', 255)->nullable();
+            $table->string('total_gaji', 255)->nullable();
         });
     }
 

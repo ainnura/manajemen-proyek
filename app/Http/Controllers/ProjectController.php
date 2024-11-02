@@ -40,12 +40,10 @@ class ProjectController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'cost' => 'required',
-            'owner' => 'required',
-            'vendor' => 'required',
-            'pic' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required'
+            'gaji' => 'required',
+            'tunjangan' => 'required',
+            'potongan' => 'required',
+            'total_gaji' => 'required'
         ]);
 
         Project::create($request->all());
@@ -74,13 +72,11 @@ class ProjectController extends Controller
     public function update(Request $request, Project $project)
     {
         $request->validate([
-           'name' => 'required',
-            'cost' => 'required',
-            'owner' => 'required',
-            'vendor' => 'required',
-            'pic' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required'
+            'name' => 'required',
+            'gaji' => 'required',
+            'tunjangan' => 'required',
+            'potongan' => 'required',
+            'total_gaji' => 'required'
         ]);
         $project->update($request->all());
 

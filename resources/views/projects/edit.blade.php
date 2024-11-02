@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Project</h2>
+                <h2>Ubah Data Gaji</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i
@@ -31,44 +31,32 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Nama Proyek:</strong>
+                    <strong>Nama Pegawai:</strong>
                     <input type="text" name="name" value="{{ $project->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Pemberi Kerja:</strong>
-                    <input type="text" name="owner" value="{{ $project->owner }}" class="form-control" placeholder="Owner">
+                    <strong>Gaji:</strong>
+                    <input type="text" name="gaji" value="{{ $project->gaji }}" class="form-control" placeholder="Owner">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Vendor:</strong>
-                    <input type="text" name="vendor" value="{{ $project->vendor }}" class="form-control" placeholder="Vendor">
+                    <strong>Tunjangan (Rp):</strong>
+                    <input type="text" name="tunjangan" value="{{ $project->tunjangan }}" class="form-control" placeholder="Vendor">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>PIC:</strong>
-                    <input type="text" name="pic" value="{{ $project->pic }}" class="form-control" placeholder="PIC">
+                    <strong>Potongan (Rp):</strong>
+                    <input type="text" name="potongan" value="{{ $project->potongan }}" class="form-control" placeholder="PIC">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Nilai Kontrak (Rp):</strong>
-                    <input type="number" name="cost" value="{{ $project->cost }}" class="form-control" placeholder="Cost">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Tanggal Mulai:</strong>
-                    <input type="date" name="start_date" value="{{ $project->start_date }}" class="form-control" placeholder="Start Date">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Tanggal Selesai:</strong>
-                    <input type="date" name="end_date" value="{{ $project->end_date }}" class="form-control" placeholder="End Date">
+                    <strong>Total Gaji (Rp):</strong>
+                    <input type="number" name="total_gaji" value="{{ $project->total_gaji }}" class="form-control" placeholder="Cost">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
